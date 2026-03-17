@@ -3,17 +3,23 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BladeProvider } from '@razorpay/blade/components';
 import { bladeTheme } from '@razorpay/blade/tokens';
 
-// Pages
-import Dashboard from './pages/Dashboard';
-import BRDUpload from './pages/BRDUpload';
-import BRDValidation from './pages/BRDValidation';
-import PRDReview from './pages/PRDReview';
-import CodeReview from './pages/CodeReview';
-import TestExecution from './pages/TestExecution';
-import Deployment from './pages/Deployment';
-import Analytics from './pages/Analytics';
-import IntegrationDetails from './pages/IntegrationDetails';
-import EstimationEngine from './pages/EstimationEngine';
+// Gateway pages
+import Dashboard from './pages/gateway/Dashboard';
+import IntegrationDetails from './pages/gateway/IntegrationDetails';
+
+// Pre-payment processing pages
+import BRDUpload from './pages/pre-payment/BRDUpload';
+import BRDValidation from './pages/pre-payment/BRDValidation';
+import EstimationEngine from './pages/pre-payment/EstimationEngine';
+
+// Payment processing pages
+import PRDReview from './pages/payment-processing/PRDReview';
+import CodeReview from './pages/payment-processing/CodeReview';
+
+// Post-payment processing pages
+import TestExecution from './pages/post-payment/TestExecution';
+import Deployment from './pages/post-payment/Deployment';
+import Analytics from './pages/post-payment/Analytics';
 
 // Layout
 import AppLayout from './components/Layout/AppLayout';
